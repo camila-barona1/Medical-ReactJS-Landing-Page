@@ -3,6 +3,7 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = withImages({
   TrailingSlash: true,
+  output: 'export', // <--- esto es crucial para exportar estático
   images: {
     disableStaticImages: true
   },
